@@ -1,5 +1,5 @@
 section{
-    padding: 30px 5%;
+    margin: 30px 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,5 +81,15 @@ section{
 @media only screen and (max-width:650px) {
     .donations img{
         width: 80%;
+    }
+}
+@media only screen and (max-width:490px) {
+    .donations .img-cont{
+        width: 300px;
+    }
+}
+@media only screen and (max-width:375px) {
+    .donations .img-cont{
+        width: 250px;
     }
 }
