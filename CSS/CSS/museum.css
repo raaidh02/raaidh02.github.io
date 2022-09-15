@@ -1,0 +1,50 @@
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.museumtext{
+    padding: 0 10px;
+    text-align: justify;
+
+}
+.museumpics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.museumpics img{
+    width: 350px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.cover img{
+    width: 100%;
+}
+.museummap {
+    margin-top: 15px;
+}
+
+@media (max-width: 1024px) {
+    .content{
+        flex-direction: column;
+    }
+    .museumpics{
+        flex-direction: row;
+    }
+    .museumpics img{
+        width: 30%;
+    }
+    p span.tckt-price{
+        text-align: left;
+    }
+}

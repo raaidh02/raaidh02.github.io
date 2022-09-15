@@ -1,0 +1,75 @@
+:root {
+    --color: rgba(0,128,0,0.5);
+}
+
+/* Plantation */
+.frame{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px 50px;
+    justify-content: center;
+    align-items: center;
+}
+.frame img.plantation{
+    width: 500px;
+    /* margin-right: 30px; */
+    border-radius: 10px;
+}
+.frame img.logo{
+    width: 100px;
+    margin: 0px 5px;
+    border-radius: 10px;
+}
+.frame iframe{
+    height: fit-content;
+    border-radius: 10px;
+}
+.frame h2{
+    font-size: 20px;
+}
+.frame p{
+    font-size: 14px;
+    padding-right: 20px 10px;
+    text-align: justify;
+}
+
+.table {
+    text-align: center;
+    margin: 50px;
+}
+.table img {
+    width: 100%;
+}
+thead {
+    background-color: var(--color);
+    padding: 20px;
+}
+thead th {
+    padding: 20px;
+}
+tr td {
+    border: 2px solid var(--color);
+}
+tfoot {
+    background-color: var(--color);
+}
+
+
+@media (max-width: 900px) {
+    .frame{
+        flex-direction: column;
+    }
+    .frame img.plantation{
+        width: 80%;
+    }
+    .table{
+        margin: 50px 10px;
+    }
+}
+@media (max-width: 320px) {
+    .table{
+        margin: 50px 0;
+    }
+}
+
