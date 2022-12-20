@@ -1,0 +1,85 @@
+section{
+    padding: 30px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.frame{
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.frame img{
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.frame{
+    text-align: center;
+}
+.frame button{
+    padding: 10px;
+    border-radius: 10px;
+    background: #007500;
+    border: none;
+}
+.frame button a{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.frame button:hover{
+    background: #00ff00;
+    text-decoration: underline;
+}
+.donations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin: 20px;
+}
+.donations .img-cont{
+    margin: 0 15px;
+    width: 400px;
+}
+.donations .img-cont img{
+    width: inherit;
+    border-radius: 10px;
+}
+.d-details p{
+    text-align: justify;
+}
+.donations button{
+    margin: 40px 20px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: #007500;
+    border: none;
+}
+.donations button a{
+    color: #fff;
+    text-decoration: none;
+}
+@media only screen and (max-width:970px) {
+    .donations{
+        flex-direction: column;
+    }
+    .donations img{
+        width: 60%;
+        margin: 20px 0 40px;
+    }
+}
+@media only screen and (max-width:650px) {
+    .donations img{
+        width: 80%;
+    }
+}
