@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="test.css">
+
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
+    <title>Donate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#36a336">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="description" content="Dehiwala Zoo Website one place for all the details purchase tickets">
+    <meta name="msapplication-TileColor" content="#36a336">
+    <meta name="msapplication-config" content="images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="donation-form">
+        <form action="" class="contact-col" id="frmDonation">
+            <input type="text" id="fName" placeholder="Enter your name" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <textarea rows="3" id="address" placeholder="Enter your address" required></textarea>
+
+            <div class="amount">
+                <label for="Donations" id="fixedDonations" class="lbdate">Select Donation Amount</label>
+                <select name="language" class="custom-select" id="fixedDonatons">
+                    <option value="month" selected disabled>Amount</option>
+                    <option value="100">LKR 100 </option>
+                    <option value="500">LKR 500 </option>
+                    <option value="1000">LKR 1000 </option>
+                    <option value="2500">LKR 2500 </option>
+                    <option value="5000">LKR 5000 </option>
+                </select>
+            </div>
+        </form>
+
+        <form class="paymentDetails" action="" method="post">
+            <div class="inputBox">
+                <span>Card Number</span>
+                <input type="text" id="cardNum" maxlength="16" class="card-number-input">
+            </div>
+            <div class="inputBox">
+                <span>Card Holder</span>
+                <input type="text" id="cardHolder" class="card-holder-input">
+            </div>
+            <div class="flexbox">
+                <div class="inputBox">
+                    <span>Expiration MM</span>
+                    <select name="" id="monthInput" class="month-input">
+                        <option value="month" selected disabled>Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>Expiration YY</span>
+                    <select name="" id="yearInput" class="year-input" onselect="inputValidation()">
+                        <option value="year" selected disabled>Year</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                </div>
+                <div class="inputBox" id="cvvInput">
+                    <span>CVV</span>
+                    <input type="text" id="cvv" maxlength="3" class="cvv-input">
+                </div>
+            </div>
+            <input type="button" value="Donate" id="donateBtn" class="submit-btn" onclick="inputValidation();">
+        </form>
+    </div>
+
+    <script src="test.js"> </script>
+</body>
+
+</html>
