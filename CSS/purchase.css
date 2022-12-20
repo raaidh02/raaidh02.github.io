@@ -93,3 +93,103 @@ section{
         width: 250px;
     }
 }
+
+/* Form css */
+.amount{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.lbdate{
+    display: block;
+    color: rgb(48, 48, 48);
+    padding-bottom: 5px;
+    font-size: 20.5px;
+}
+
+.donation-form form input, .donation-form form textarea{
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+
+#frmDonation{
+    width: 80%;
+}
+
+.paymentDetails{
+    width: 80%;
+}
+
+/*-----------------------------------------------Card Payment details------------------------------------------------------*/
+
+.donation-form{
+    background: #90EE90;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 20px;
+    width: 65%;
+    padding: 0 30px 30px 0;
+    margin: auto;
+    margin-bottom: 40px;
+    transition: 1s;
+}
+
+
+.donation-form  form{
+    margin: auto;
+    padding: 20px;
+
+}
+.donation-form  form .inputBox{
+    margin-top: 10px;
+}
+
+.donation-form form .inputBox span{
+    display: block;
+    color:#333;
+    padding-bottom: 5px;
+}
+
+.donation-form  form input,
+.donation-form  form .inputBox select,
+.donation-form  form textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid rgba(0,0,0,.3);
+    color:#444;
+}
+
+.donation-form  form .flexbox{
+    display: flex;
+    gap:15px;
+}
+
+.donation-form  form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.donation-form  form .submit-btn{
+    width: 80%;
+    align-items: center;
+    transform: translateX(15%);
+    margin: auto;
+    background:#009578;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+.donation-form  form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}

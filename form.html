@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="CSS/form.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="#" id="form">
+            <div class="form first">
+                <div class="personal details">
+                    <span class="title"> Personal details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" id="fname" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" id="dob" placeholder="Enter birth date" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" id="email" placeholder="Enter your e-mail" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Confirm Email</label>
+                            <input type="text" id="emailconf" placeholder="Confirm e-mail" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="tel" id="num" placeholder="Enter your mobile number" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gender" id="gender">
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="guest-container">
+                    <div class="guests">
+                        <span class="title">Guests</span>
+                        <div class="tickets">
+                            <div class="ticket">
+                                <label>Sri Lankan Adult <p class="price">LKR 1200</p></label>
+                                <div class="button">
+                                    <button id="minus">-</button>
+                                    <input type="number" name="sladult" id="sladult" value="0" min="0">
+                                    <button id="plus">+</button>
+                                </div>
+                            </div>
+                            <div class="ticket">
+                                <label>Sri Lankan Child(4 - 13 years)<p class="price">LKR 700</p></label>
+                                <div class="button">
+                                    <button id="minus1">-</button>
+                                    <input type="number" name="slchild" id="slchild" value="0" min="0">
+                                    <button id="plus1">+</button>
+                                </div>
+                            </div>
+                            <div class="ticket">
+                                <label>Foreigner Adult <p class="price">LKR 5500</p></label>
+                                <div class="button">
+                                    <button id="minus2">-</button>
+                                    <input type="number" name="fadult" id="fadult" value="0" min="0">
+                                    <button id="plus2">+</button>
+                                </div>
+                            </div>
+                            <div class="ticket">
+                                <label>Foreigner Child(4 - 13 years)<p class="price">LKR 2700</p></label>
+                                <div class="button">
+                                    <button id="minus3">-</button>
+                                    <input type="number" name="fchild" id="fchild" value="0" min="0">
+                                    <button id="plus3">+</button>
+                                </div>
+                            </div>
+                            <div class="ticket">
+                                <label>Infant(Under 4 years)<p class="price">LKR free</p></label>
+                                <div class="button">
+                                    <button id="minus4">-</button>
+                                    <input type="number" name="Infant" id="Infant" value="0" min="0">
+                                    <button id="plus4">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="duration">
+                    <label for="duration">DURATION</label><br>
+                    <select class="options" name="duration" id="duration">
+                        <option value="3hrs" selected>3 hours</option>
+                        <option value="half">Half Day</option>
+                        <option value="full">Full Day</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div class="submit">
+                    <button type="submit" id="calculate" name="calculate">Add to Order</button>
+                </div>
+            </div>
+            <div class="ordersum">
+                <h2>Your Order</h2>
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td class="type">
+                            <p>SL Adults</p>
+                        </td>
+                        <td>
+                            <div class="breakdown">
+                                <p id="sladultsum"></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="type">
+                            <p>SL Child</p>
+                        </td>
+                        <td>
+                            <div class="breakdown">
+                                <p id="slchildsum"></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="type">
+                            <p>Foreign Adult</p>
+                        </td>
+                        <td>
+                            <div class="breakdown">
+                                <p id="fadultsum"></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="type">
+                            <p>Foreign Child</p>
+                        </td>
+                        <td>
+                            <div class="breakdown">
+                                <p id="fchildsum"></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="type">
+                            <p>Infant</p>
+                        </td>
+                        <td>
+                            <div class="breakdown">
+                                <p id="infantsum"></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="type">
+                            <div class="total">
+                                <p>Total</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="total">
+                                <p id="output"></p>
+                            </div>
+                        </td>
+                    </tr>
+                </table><br>
+            </div>
+            <Table id="orders">
+                <tr>
+
+                    <td>Order Number</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <th>
+                        <p id="ordernum"></p>
+                    </th>
+                    <th>
+                        <p id="orderprice"></p>
+                    </th>
+                </tr>
+                <tr>
+                    <div class="favourite">
+                        <td class="favourite">
+                            <p>Favourite Order</p>
+                        </td>
+                    </div>
+                    <div class="favourite">
+                        <td class="favourite">
+                            <p id="favOrder"></p>
+                        </td>
+                    </div>
+                </tr>
+            </table>
+            <div class="favourite">
+                <P id="favOrder"></P>
+            </div>
+            <div class="submit">
+                <button type="submit" id="addFave" name="addFave"> Add to Favourites</button>
+            </div>
+            <br>
+            <div class="submit">
+                <button type="submit" id="orderFave" name="orderFave">Order Favourites</button>
+            </div>
+
+<br>
+            <div class="submit">
+                <button type="submit" id="loyalty" name="loyalty">Check Loyalty</button>
+            </div><br>
+
+
+            <div class="submit">
+                <button type="submit" id="placeorder" name="placeorder">Place Order</button>
+            </div>
+
+
+        </form>
+    </div>
+    </div>
+    </Table>
+    </form>
+    </div>
+    <script src="Scripts/form.js"></script>
+</body>
+
+</html>
